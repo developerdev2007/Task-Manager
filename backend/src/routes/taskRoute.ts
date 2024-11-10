@@ -9,7 +9,7 @@ import {
 } from "../controllers/taskController";
 const taskRoutes = express.Router();
 
-taskRoutes.get("/task", getTasks); //all tasks
+taskRoutes.get("/tasks", getTasks); //all tasks
 taskRoutes.get("/task/:id", getTaskById); // by id
 taskRoutes.post("/task", createTask); // create task
 taskRoutes.delete("/task/:id", deleteTask); //delete task
